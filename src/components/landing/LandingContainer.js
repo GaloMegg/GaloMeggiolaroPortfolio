@@ -3,7 +3,7 @@ import Landing from './Landing'
 
 const LandingContainer = () => {
     return (
-        <section>
+        <section className='landing'>
             <Landing />
         </section>
     )

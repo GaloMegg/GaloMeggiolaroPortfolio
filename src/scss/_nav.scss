@@ -1,0 +1,29 @@
+.nav {
+    background-color: v.$bg;
+    display: flex;
+    justify-content: space-between;
+    max-height: 4vh;
+
+    div {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &>a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &>a,
+    &>div>a {
+        color: v.$white;
+        margin: 1%;
+        &:hover {
+            color: v.$lblue;
+        }
+    }
+}
