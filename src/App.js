@@ -20,7 +20,6 @@ function App() {
     )
   }
   else {
-
     return (
       <main className="App">
         <NavContainer />

@@ -2,17 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-const Nav = () => {
-  // useselector languages to get the language
-
+const Nav = ({ path, setPath }) => {
   return (
     <>
-      <Link to="/">Home</Link>
-      <div>
-      <Link to="/aboutMe">About Me</Link>
-      <Link to="/contact">Contact</Link>
-      <Link to="/projects">Projects</Link>
-      </div>
+      <Link onClick={() => { setPath("/") }} to="/">Home</Link>
+      <Link className={path === "/aboutme" ? "selected" : ""} onClick={() => { setPath("/aboutme") }} to="/aboutMe">About Me</Link>
+      <Link className={path === "/contact" ? "selected" : ""} onClick={() => { setPath("/contact") }} to="/contact">Contact</Link>
+      <Link className={path === "/projects" ? "selected" : ""} onClick={() => { setPath("/projects") }} to="/projects">Projects</Link>
     </>
   )
 }

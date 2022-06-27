@@ -2,7 +2,13 @@
     background-color: v.$bg;
     display: flex;
     justify-content: space-between;
-    max-height: 4vh;
+    // max-height: 4vh;
+
+    .selected {
+        border-radius: 16px 16px 0 0;
+        background-color: v.$white;
+        color: v.$bg;
+    }
 
     div {
         width: 60%;
@@ -21,7 +27,8 @@
     &>a,
     &>div>a {
         color: v.$white;
-        margin: 1%;
+        padding: 2%;
+
         &:hover {
             color: v.$lblue;
         }
