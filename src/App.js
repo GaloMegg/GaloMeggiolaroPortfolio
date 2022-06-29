@@ -27,9 +27,6 @@ function App() {
           <Route path="/" element={<LandingContainer />} />
           {/* <Route path="/contact" element={<ContactInfoContainer />} /> */}
           {/* <Route path="/projects" element={<ProjectsContainer />} /> */}
-
-
-
         </Routes>
       </main>
     );
