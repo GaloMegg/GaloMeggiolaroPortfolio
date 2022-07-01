@@ -1,5 +1,6 @@
 @use "variables" as v;
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
 *,
 body,
 div,
@@ -83,7 +84,9 @@ acronym {
 a {
     text-decoration: none;
 }
+
 @import "./mainContent";
 @import "./landing/landing";
 @import "./bubble/bubble";
 @import "./nav";
+@import "aboutme/aboutMe";

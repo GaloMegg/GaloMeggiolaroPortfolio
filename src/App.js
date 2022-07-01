@@ -4,6 +4,7 @@ import LandingContainer from './components/landing/LandingContainer';
 import { useEffect, useState } from 'react';
 import FirstLoaderContainer from './components/firstLoader/FirstLoaderContainer';
 import audioMp3 from './components/firstLoader/radiation-sound.mp3'
+import AboutMeContainer from './components/aboutMe/AboutMeContainer';
 function App() {
   const [firstLoader, setFirstLoader] = useState(true)
   useEffect(() => {
@@ -30,6 +31,9 @@ function App() {
         <NavContainer />
         <Routes>
           <Route path="/" element={<LandingContainer />} />
+          <Route path="/aboutme" element={<AboutMeContainer />} />
+
+
           {/* <Route path="/contact" element={<ContactInfoContainer />} /> */}
           {/* <Route path="/projects" element={<ProjectsContainer />} /> */}
         </Routes>
