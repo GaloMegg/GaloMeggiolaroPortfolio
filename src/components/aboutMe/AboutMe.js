@@ -3,7 +3,7 @@ import profilePic from "./galomeggiolaroperfil.jpg"
 const AboutMe = () => {
     return (
         <article className='aboutMe__article'>
-            <img src={profilePic} alt="profilePicture" />
+            <img src={profilePic} alt="profilePicture" loading='lazy' />
             <p>
                 I'm a passionate Developer with a huge need of knowledge.
                 Polyglot.
