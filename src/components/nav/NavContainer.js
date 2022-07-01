@@ -4,7 +4,9 @@ import Nav from './Nav'
 const NavContainer = () => {
     const [path, setPath] = useState(localStorage.getItem("link") || undefined)
     useEffect(() => {
-        localStorage.setItem("link", path)
+        window.addEventListener("popstate", () => {
+            setPath(window.location.pathname)
+        })
     }, [path])
     return (
         <nav className='nav'>
