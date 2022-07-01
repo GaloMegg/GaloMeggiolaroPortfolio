@@ -1,32 +1,60 @@
 .landing {
-    height: 90vh;
+    height: 96vh;
     width: 100%;
     background-color: v.$bg;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    background-image: url("./images/landing-bg.gif");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
 
-    &>article {
-        width: 80%;
-        text-align: center;
 
-        .landing__title {
-            font-size: 2.5rem;
-            font-weight: bold;
+    .landing__gif {
+        background: rgb(5, 5, 5);
+        background: radial-gradient(circle, rgba(5, 5, 5, 0) 0%, rgba(162, 166, 166, 0) 14%, rgba(0, 0, 0, 1) 100%);
+        height: 96vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        &>p {
+            justify-content: center;
             color: v.$white;
+            position: absolute;
+            font-size: 10rem;
+            top: 30vh;
+            user-select: none;
+            z-index: 1;
+
         }
 
-        .landing__occupation {
-            font-size: 1.7rem;
-            font-weight: bold;
-            color: v.$white;
-        }
+        &>article {
+            user-select: none;
+            z-index: 2;
+            width: 80%;
+            text-align: center;
 
-        .landing__description {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: v.$white;
+            .landing__title {
+                font-size: 3rem;
+                font-weight: bold;
+                color: v.$white;
+            }
+
+            .landing__occupation {
+                font-size: 1.7rem;
+                font-weight: bold;
+                color: v.$white;
+            }
+
+            .landing__description {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: v.$white;
+            }
         }
     }
 }

@@ -4,7 +4,7 @@ import Bubble from './Bubble'
 const FirstLoaderContainer = () => {
   return (
     <section className='loaderBubble'>
-        <Bubble/>
+      <Bubble />
     </section>
   )
 }

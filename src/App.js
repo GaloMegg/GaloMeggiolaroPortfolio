@@ -3,18 +3,23 @@ import { Routes, Route } from 'react-router-dom';
 import LandingContainer from './components/landing/LandingContainer';
 import { useEffect, useState } from 'react';
 import FirstLoaderContainer from './components/firstLoader/FirstLoaderContainer';
-
+import audioMp3 from './components/firstLoader/radiation-sound.mp3'
 function App() {
   const [firstLoader, setFirstLoader] = useState(true)
-
   useEffect(() => {
+    const audio = new Audio(audioMp3)
+    if (firstLoader) {
+      audio.play()
+    }
     setTimeout(() => {
       setFirstLoader(false)
-    }, 3000);
+      audio.pause()
+    }, 6000);
   }, [])
   if (firstLoader) {
     return (
       <>
+
         <FirstLoaderContainer />
       </>
     )
