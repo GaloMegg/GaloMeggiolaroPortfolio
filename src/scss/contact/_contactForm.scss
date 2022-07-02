@@ -1,0 +1,48 @@
+.contactForm {
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        margin: 4%;
+        width: 30%;
+        background: none;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 101%;
+            border-radius: 50%;
+
+            &:hover {
+                background-color: black;
+            }
+
+        }
+    }
+
+    &>div {
+        width: 70%;
+        margin-top: 6%;
+
+
+        input,
+        textarea {
+            width: 100%;
+            height: 3vh;
+            border: 1px solid #ccc;
+            border-radius: 16px;
+            padding: .5rem;
+            font-size: 1rem;
+            resize: none;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

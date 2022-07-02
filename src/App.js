@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import FirstLoaderContainer from './components/firstLoader/FirstLoaderContainer';
 import audioMp3 from './components/firstLoader/radiation-sound.mp3'
 import AboutMeContainer from './components/aboutMe/AboutMeContainer';
+import ContactContainer from './components/contact/ContactContainer';
 function App() {
   const [firstLoader, setFirstLoader] = useState(true)
   useEffect(() => {
@@ -16,11 +17,10 @@ function App() {
       setFirstLoader(false)
       audio.pause()
     }, 6000);
-  }, [])
+  })
   if (firstLoader) {
     return (
       <>
-
         <FirstLoaderContainer />
       </>
     )
@@ -34,7 +34,7 @@ function App() {
           <Route path="/aboutme" element={<AboutMeContainer />} />
 
 
-          {/* <Route path="/contact" element={<ContactInfoContainer />} /> */}
+          <Route path="/contact" element={<ContactContainer />} />
           {/* <Route path="/projects" element={<ProjectsContainer />} /> */}
         </Routes>
       </main>
