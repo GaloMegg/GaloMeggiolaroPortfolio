@@ -1,1 +1,122 @@
 @import "./contactForm";
+
+.contactContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: v.$white;
+
+    .contactInfo {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // .contactInfo__sent {}
+        background-color: v.$white;
+        padding: 2%;
+
+        .contactInfo__linuxbashexp {
+            border-radius: 16px 16px 0px 0px;
+            width: 84%;
+            height: 3vh;
+            background-color: #222222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1%;
+
+
+            .btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 9%;
+                height: 2.7vh;
+                border-radius: 6px;
+                margin: 3%;
+                background-color: #484848;
+                border: 1px solid #383838;
+
+                &:hover {
+                    background-color: #4e4e4e;
+
+                }
+            }
+
+            &>p {
+                width: 90%;
+                text-align: center;
+                font-weight: bold;
+                font-family: monospace;
+                color: #FDFEFC;
+
+            }
+
+        }
+
+
+
+        .bash {
+            width: 80%;
+            background-color: #300A24;
+            padding: 3%;
+            border-radius: 0px 0px 16px 16px;
+
+
+            &>p {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                word-wrap: break-word;
+
+                .active {
+                    animation: pulse 1.5s infinite;
+                    display: inline-block;
+                    width: 3%;
+                    margin: 1%;
+                    background-color: #FDFEFC;
+                    height: 2.5vh;
+                }
+
+                .contactInfo__green {
+                    color: #299B69;
+                    font-family: monospace;
+                    font-weight: bold;
+                }
+
+                .contactInfo__white {
+                    font-weight: bold;
+                    font-family: monospace;
+                    color: #FDFEFC;
+                }
+
+                .contactInfo__blue {
+                    font-family: monospace;
+                    font-weight: bold;
+
+                    color: #19478B;
+                }
+            }
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+
+    49% {
+        opacity: 1;
+    }
+
+    51% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
