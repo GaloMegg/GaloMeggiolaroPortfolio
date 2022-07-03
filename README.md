@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Galo Meggiolaro Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is deployed [here](https://galomeggiolaro.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/89c1baa7-a99d-46da-a95c-40d61698abd3/deploy-status)](https://app.netlify.com/sites/galomeggiolaro/deploys)
 
 ## Available Scripts
 
