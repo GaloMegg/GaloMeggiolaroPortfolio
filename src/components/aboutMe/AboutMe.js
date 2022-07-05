@@ -1,9 +1,10 @@
 import React from 'react'
-import profilePic from "./galomeggiolaroperfil.jpg"
+import profilePic from "./images/galomeggiolaroperfil.jpg";
+import bubbleGif from "./images/aboutme.gif";
 const AboutMe = () => {
     return (
         <article className='aboutMe__article'>
-            <img src={profilePic} alt="profilePicture" loading='lazy' />
+            <img src={profilePic} alt="Galo Meggiolaro profile picture" loading='lazy' className='profilePic' />
             <p>
                 I'm a passionate Developer with a huge need of knowledge.
                 Polyglot.
@@ -17,6 +18,7 @@ const AboutMe = () => {
                 I prefer winter and rainy days. Not only that, but I'm willing to learn any language.
                 Currently, I'm finishing a Full Stack bootcamp!
             </p>
+            <img src={bubbleGif} alt="Artistic image of a bubble in a metro" className='artPic'/>
         </article>
     )
 }
