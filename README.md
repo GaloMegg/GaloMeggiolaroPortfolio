@@ -40,3 +40,4 @@ will run test in watch-mode
 <code> npm build </code>  
 will build a production app
 
+# simpleshow
