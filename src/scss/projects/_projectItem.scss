@@ -1,0 +1,12 @@
+.projects__item {
+    &>img {
+        width: 100%;
+
+    }
+
+    &>div {
+        
+        z-index: 2;
+        height: 100%;
+    }
+}
